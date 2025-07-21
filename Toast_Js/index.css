@@ -1,0 +1,50 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+#toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.toast {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgb(38, 189, 38);
+  color: antiquewhite;
+  border-radius: 10px;
+  font-size: 16px;
+  animation: slideIn 0.5s fadeOut 0.5s 3s;
+  opacity: 1;
+}
+
+.toast.error {
+  background-color: rgb(234, 68, 68);
+}
+
+@keyframes slideIn {
+  from{
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  } to {
+    opacity: 0;
+  }
+}
