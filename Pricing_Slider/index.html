@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Pricing Slider</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="bg-gray-900 min-h-screen flex items-center justify-center font-sans text-teal-50"
+  >
+    <div class="bg-gray-800 w-full max-w-lg p-8 rounded-xl shadow-lg">
+      <div
+        class="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4"
+      >
+        <p
+          id="pageviews-text"
+          class="uppercase tracking-widest text-teal-400 font-bold text-sm"
+        >
+          100K Pageviews
+        </p>
+        <div class="flex items-center gap-2">
+          <span id="price-text" class="text-teal-100 text-4xl font-extrabold"
+            >$16.00</span
+          >
+          <span class="text-teal-400">/ month</span>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <input
+          type="range"
+          id="price-slider"
+          min="0"
+          max="4"
+          value="2"
+          class="w-full h-2 bg-teal-500 rounded-lg cursor-pointer accent-teal-500 appearance-none"
+        />
+      </div>
+
+      <div class="flex justify-center items-center gap-4 text-teal-400 text-sm">
+        <span>Monthly Billing</span>
+        <label class="relative inline-flex items-center cursor-pointer">
+          <input 
+          type="checkbox"
+          id="billing-toggle" 
+          class="sr-only peer" 
+          />
+          <div
+            class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-focus:ring-4 peer-focus:ring-teal-300 dark:peer-focus:ring-teal-800 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-teal-600 dark:peer-checked:bg-teal-600"
+          ></div>
+        </label>
+        <span>Yearly Billing</span>
+        <span class="bg-teal-100 text-teal-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">-25%</span>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
