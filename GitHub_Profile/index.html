@@ -4,20 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHub Profile</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body
-    class="min-h-screen bg-slate-950 text-indigo-50 flex justify-center items-center"
-  >
-    <main>
+  <body class="min-h-screen bg-slate-950 text-indigo-50 flex justify-center">
+    <main class="flex flex-col items-center justify-center">
       <form id="search-form" class="flex gap-4 mb-8">
         <input
           type="text"
           placeholder="Enter a GitHub username"
           id="user-input"
-          class="px-4 py-2 bg-slate-900 rounded-sm w-full md:w-80 focus:outline-none focus:ring-[1.5px] focus:ring-indigo-600 caret-indigo-300"
+          class="px-4 py-2 bg-indigo-900 rounded-sm w-full md:w-80 focus:outline-none focus:ring-[1.5px] focus:ring-indigo-600 caret-indigo-300"
         />
-        <button id="search-button" class="flex gap-1 bg-indigo-600 px-4 py-2 rounded-sm font-semibold hover:bg-indigo-700">
+        <button
+          id="search-button"
+          class="flex gap-1 bg-indigo-600 px-4 py-2 rounded-sm font-semibold hover:bg-indigo-700"
+        >
           Find
           <svg
             class="w-4 h-6 text-gray-800 dark:text-white"
@@ -39,7 +40,7 @@
       </form>
 
       <div id="profile-container">
-        <!-- empty -->
+        <!-- where the magic appears -->
       </div>
     </main>
 
