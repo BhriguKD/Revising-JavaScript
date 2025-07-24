@@ -6,9 +6,12 @@ Purpose
   - Have fun breaking and fixing things 
 
 Toast Js
-  => Simple standard toast notification.
-  => dom manipulation.
+  - Simple standard toast notification.
+  - dom manipulation.
 
 GitHub Profile
-  => Learning API fetching and presenting them in a custom card interface.
-  => use of async func, await, promise and fetch. 
+  - Learning API fetching and presenting them in a custom card interface.
+  - use of async func, await, promise and fetch.
+
+Form Validation Live
+ - building...
