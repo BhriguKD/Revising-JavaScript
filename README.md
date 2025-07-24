@@ -14,4 +14,6 @@ GitHub Profile
   - use of async func, await, promise and fetch.
 
 Form Validation Live
- - building...
+ - Validation checking using Vanilla JS
+ - dom manipulation and classList API
+ - .test() to check Regex
