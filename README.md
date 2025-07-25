@@ -17,3 +17,9 @@ Form Validation Live
  - Validation checking using Vanilla JS
  - dom manipulation and classList API
  - .test() to check Regex
+
+Weather Live
+  - OpenWeather API fetch
+  - Promise.all() usage
+  - Neubrutalism for overall theme
+  - Worked in modules for Js
