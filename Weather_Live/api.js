@@ -1,4 +1,4 @@
-const API_KEY = 'oooo'
+const API_KEY = ''
 
 export async function getWeatherByCity(city) {
   const currWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
@@ -7,8 +7,8 @@ export async function getWeatherByCity(city) {
   try {
     const [currWeatherResponse, forecastResponse] = await Promise.all([fetch(currWeatherUrl), fetch(forecastUrl)])
 
-    if(!currWeatherResponse.ok || !forecastResponse){
-      throw new Error('City not found or API error')
+    if(!currWeatherResponse.ok || !forecastResponse.ok){
+      throw new Error('City not found or API error.')
     }
 
   const currentWeatherData = await currWeatherResponse.json()
@@ -17,7 +17,7 @@ export async function getWeatherByCity(city) {
   return {current: currentWeatherData, forecast: forecastData}
 
   } catch(error) {
-    console.log("Failed to fetch weather data: ", error)
+    console.error("Failed to fetch weather data: ", error)
     throw error
   }
 }
