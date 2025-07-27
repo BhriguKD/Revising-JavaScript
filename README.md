@@ -25,4 +25,7 @@ Weather Live
   - Worked in modules for Js
 
 Bento Box Cart
-  - building...
+  - state management in vanilla JS
+  - rendering products
+  - local storage to save cart details
+  - dom references
