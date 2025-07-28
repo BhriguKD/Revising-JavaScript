@@ -29,3 +29,6 @@ Bento Box Cart
   - rendering products
   - local storage to save cart details
   - dom references
+
+SPA Router
+  - building...
