@@ -6,9 +6,17 @@
     <title>Vanilla JS SPA Router</title>
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
+               @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        #app-root > * {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
     </style>
 </head>
-<body class="bg-gray-100 vtext-slate-100 font-sans">
+<body class="bg-gray-950 text-slate-100 font-sans">
+     <div class="absolute inset-0 -z-10 h-full w-full bg-slate-950 bg-[radial-gradient(#1e1e1e_1px,transparent_1px)] [background-size:16px_16px]"></div>
 
     <div class="min-h-screen flex flex-col items-center p-4 sm:p-8">
         <header class="w-full max-w-4xl mb-12">
@@ -20,9 +28,9 @@
         </header>
 
         <main id="app-root" class="w-full max-w-4xl">
-            </main>
+        </main>
     </div>
 
-    <script src="main.js" type="module"></script>
+    <script src="index.js" type="module"></script>
 </body>
 </html>
