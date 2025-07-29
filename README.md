@@ -31,4 +31,6 @@ Bento Box Cart
   - dom references
 
 SPA Router
-  - building...
+  - router built in vanilla js
+  - hashchange to trigger the updates
+  - fade in animation for modern feel
